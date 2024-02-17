@@ -81,42 +81,47 @@ const gridEmployeeCountry = (props) => (
 export const EditorData = () => (
   <div>
     <h3>
-      Try React
-      React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
+    **React:**
 
-      Online Playgrounds
-      If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on CodePen, CodeSandbox, or Stackblitz.
-
-      If you prefer to use your own text editor, you can also download this HTML file, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
-
-      Add React to a Website
-      You can add React to an HTML page in one minute. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
-
-      Create a New React App
-      When starting a React project, a simple HTML page with script tags might still be the best option. It only takes a minute to set up!
-
-      As your application grows, you might want to consider a more integrated setup. There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. Learn how.
-
-      Learn React
-      People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.
-
-      If you prefer to learn by doing, start with our practical tutorial.
-      If you prefer to learn concepts step by step, start with our guide to main concepts.
-      Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
-
-      First Examples
-      The React homepage contains a few small React examples with a live editor. Even if you don’t know anything about React yet, try changing their code and see how it affects the result.
-
-      React for Beginners
-      If you feel that the React documentation goes at a faster pace than you’re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you’re done, give the documentation another try!
-
-      React for Designers
-      If you’re coming from a design background, these resources are a great place to get started.
-
-      JavaScript Resources
-      The React documentation assumes some familiarity with programming in the JavaScript language. You don’t have to be an expert, but it’s harder to learn both React and JavaScript at the same time.
-
-      We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
+    React es una biblioteca de JavaScript desarrollada por Facebook que se utiliza para construir interfaces de usuario interactivas y eficientes. Fue diseñada con el objetivo de facilitar la creación de aplicaciones web de una sola página (Single Page Applications - SPAs), donde los cambios en la interfaz de usuario ocurren dinámicamente sin necesidad de recargar la página completa.
+    
+    **Principales Características de React:**
+    
+    1. **Componentes:** React se basa en el concepto de componentes, que son bloques de construcción reutilizables para construir interfaces de usuario. Los componentes pueden contener su propio estado y lógica, y se pueden componer para formar aplicaciones más grandes.
+    
+    2. **Virtual DOM:** React utiliza un Virtual DOM para optimizar el rendimiento. En lugar de actualizar el DOM cada vez que hay un cambio, React realiza cambios en una representación virtual del DOM y luego compara esta representación virtual con el DOM real, actualizando solo las partes que han cambiado.
+    
+    3. **JSX (JavaScript XML):** React utiliza JSX, una extensión de JavaScript que permite escribir componentes de interfaz de usuario de manera más declarativa y similar a HTML. JSX se compila a llamadas de funciones de JavaScript.
+    
+    4. **Unidireccionalidad de Datos (One-Way Data Binding):** React sigue el principio de unidireccionalidad de datos, lo que significa que los datos fluyen en una sola dirección, facilitando el mantenimiento y la depuración del código.
+    
+    **¿Qué se puede hacer con React?:**
+    
+    1. **Desarrollo de Aplicaciones Web:** React es especialmente útil para construir aplicaciones web de una sola página (SPAs), donde la interfaz de usuario se actualiza de manera eficiente sin necesidad de recargar la página.
+    
+    2. **Interfaces de Usuario Interactivas:** React permite la creación de interfaces de usuario altamente interactivas mediante el uso de componentes reutilizables y la gestión eficiente del estado.
+    
+    3. **Aplicaciones Móviles:** Con el uso de React Native, una extensión de React, es posible desarrollar aplicaciones móviles para iOS y Android utilizando el mismo código base.
+    
+    4. **Aplicaciones Empresariales:** React es ampliamente utilizado en el desarrollo de aplicaciones empresariales, ya que ofrece modularidad, reutilización de código y un rendimiento eficiente.
+    
+    **Programación:**
+    
+    La programación es el proceso de diseñar e implementar un conjunto de instrucciones o algoritmos para realizar una tarea específica. Aquí hay algunos temas clave relacionados con la programación:
+    
+    1. **Lenguajes de Programación:** Los lenguajes de programación son herramientas que permiten a los desarrolladores comunicarse con las computadoras. Algunos lenguajes populares incluyen JavaScript, Python, Java, C++, y muchos más.
+    
+    2. **Algoritmos:** Los algoritmos son secuencias paso a paso de instrucciones diseñadas para realizar una tarea específica. Son la base de la programación y la resolución de problemas.
+    
+    3. **Estructuras de Datos:** Las estructuras de datos son formas de organizar y almacenar datos para facilitar su manipulación. Ejemplos incluyen arrays, listas enlazadas, pilas y colas.
+    
+    4. **Paradigmas de Programación:** Los paradigmas de programación son enfoques o estilos específicos para organizar y estructurar el código. Algunos ejemplos son la programación imperativa, la programación declarativa y la programación orientada a objetos.
+    
+    5. **Desarrollo Web:** En el contexto del desarrollo web, se pueden aprender tecnologías como HTML, CSS y JavaScript, así como marcos y bibliotecas como React para construir aplicaciones web interactivas.
+    
+    6. **Desarrollo de Software:** Comprender el ciclo de vida del desarrollo de software, la gestión de proyectos, la depuración y las pruebas son aspectos esenciales de la programación de software.
+    
+    En resumen, la programación es una habilidad esencial en la era digital y permite a los desarrolladores crear aplicaciones y soluciones para una variedad de problemas y plataformas. React, como biblioteca de JavaScript, es una herramienta poderosa en el desarrollo de interfaces de usuario eficientes y dinámicas para aplicaciones web modernas.
     </h3>
   </div>
 );
@@ -214,7 +219,7 @@ export const areaCustomSeries = [
     dataSource: areaChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'USA',
+    name: 'Colombia',
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
@@ -224,7 +229,7 @@ export const areaCustomSeries = [
     dataSource: areaChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'France',
+    name: 'Peru',
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
@@ -233,7 +238,7 @@ export const areaCustomSeries = [
     dataSource: areaChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Mexico',
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
@@ -3095,7 +3100,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Colombia',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3103,7 +3108,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'England',
+    name: 'Peru',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3111,7 +3116,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'India',
+    name: 'Mexico',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
