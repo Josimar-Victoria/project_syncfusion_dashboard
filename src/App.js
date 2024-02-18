@@ -29,6 +29,8 @@ import {
   Editor,
   Login,
   Register,
+  Projects,
+  Weather,
 } from "./pages";
 import "./App.css";
 
@@ -134,6 +136,8 @@ const App = () => {
                         />
                         <Route path="/pyramid" element={<Pyramid />} />
                         <Route path="/stacked" element={<Stacked />} />
+                        <Route path="/projects" element={<Projects/>}/>
+                        <Route path="/weather" element={<Weather/>}/>
                       </Routes>
                     </div>
                     <Footer />

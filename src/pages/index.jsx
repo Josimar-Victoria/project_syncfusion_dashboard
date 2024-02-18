@@ -16,3 +16,5 @@ export { default as Kanban } from "./Kanban";
 export { default as Orders } from "./Orders";
 export { default as Login } from "./auth/Login";
 export { default as Register } from "./auth/Register";
+export {default as Projects} from './Projects'
+export {default as Weather} from './Weather'
