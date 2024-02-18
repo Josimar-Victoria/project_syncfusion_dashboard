@@ -3,12 +3,20 @@ import { Link, useNavigate } from "react-router-dom";
 import { useStateContext } from "../../contexts/ContextProvider";
 
 const Login = () => {
-
   const { detail, setDatail } = useStateContext();
   const navigate = useNavigate();
 
   const onSignUpHandle = (e) => {
     e.preventDefault();
+
+    // Validar si los campos están llenos
+    if (!detail.userName || !detail.email || !detail.password) {
+      // Si alguno de los campos está vacío, no hagas nada
+      alert("Please fill in all the fields");
+      return;
+    }
+
+    // Realizar las acciones solo si los campos no están vacíos
     localStorage.setItem("login-signup-project", JSON.stringify(detail));
     navigate("/");
   };
